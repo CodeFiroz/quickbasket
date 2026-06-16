@@ -6,7 +6,13 @@
 
 
 @theme inline {
-  --font-sans: var(--font-poppins-sans);
+  --font-sans: var(--font-inter-sans);
+  --font-poppins: var(--font-poppins-sans);
+  --default-font-family: var(--font-sans);
+
+  --color-theme: #064C50;
+  --color-theme-secondary: #BDEB69;
+  --theme-light: #2B676A;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
