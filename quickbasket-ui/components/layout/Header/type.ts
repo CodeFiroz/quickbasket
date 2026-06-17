@@ -6,3 +6,10 @@ interface Product {
     regularPrice: string,
     salePrice: string
 }
+
+interface Categories {
+    _id: string,
+    name: string,
+    image: string,
+    slug: string,
+}

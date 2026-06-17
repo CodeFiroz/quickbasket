@@ -1,0 +1,40 @@
+[
+    {
+        "_id": "ye298ey2hji0e",
+        "name": "Fashion",
+        "slug": "fashion",
+        "image": "/img/category/apparel.png"
+    },
+    {
+        "_id": "e923280h2e0i",
+        "name": "Cosmetic",
+        "slug": "cosmetic",
+        "image": "/img/category/cosmetic.png"
+    },
+    {
+        "_id": "93h2o3ty97eg",
+        "name": "Electronics",
+        "slug": "electronic",
+        "image": "/img/category/electronics.png"
+    },
+    {
+        "_id": "4242o3ty97eg",
+        "name": "Home Decor",
+        "slug": "home-decor",
+        "image": "/img/category/lamp.png"
+    }
+    ,
+    {
+        "_id": "24781039yeh",
+        "name": "Sports",
+        "slug": "sport",
+        "image": "/img/category/sport.png"
+    },
+    {
+        "_id": "08762536fydvbhd9",
+        "name": "Television",
+        "slug": "television",
+        "image": "/img/category/tv.png"
+    }
+    
+]

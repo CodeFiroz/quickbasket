@@ -1,12 +1,19 @@
+"use client";
+
 import {
   FlameIcon,
   HeartIcon,
+  HomeIcon,
+  SearchIcon,
   ShoppingBagIcon,
   ShoppingBasketIcon,
   User2Icon,
+  UserIcon,
+  XIcon,
 } from "lucide-react";
 import Link from "next/link";
-import Searchbar from "./Searchbar"
+import Searchbar from "./Searchbar";
+import { useRef, useState } from "react";
 
 const Header = () => {
   const navmenu = {
@@ -22,12 +29,15 @@ const Header = () => {
     ],
   };
 
+  const [showSearch, setShowSeach] = useState<boolean>(false);
+  const searchRef = useRef(null);
+
   return (
     <>
       <div className="bg-theme">
         <div className="w-full border-b border-white/10 p-2">
-          <div className="container mx-auto px-5 flex justify-between items-center">
-            <div className="flex items-center gap-5">
+          <div className="container mx-auto px-5 flex justify-center lg:justify-between items-center">
+            <div className="hidden lg:flex items-center gap-5">
               {navmenu.leftNav.map((nav, idx) => (
                 <Link
                   href={nav.url}
@@ -46,7 +56,7 @@ const Header = () => {
               </span>
             </div>
 
-            <div className="flex items-center gap-5">
+            <div className="hidden lg:flex items-center gap-5">
               {navmenu.rightNav.map((nav, idx) => (
                 <Link
                   href={nav.url}
@@ -63,7 +73,7 @@ const Header = () => {
         {/* // Top bar  */}
 
         <div className="w-full border-b border-white/10 p-2">
-          <div className="container mx-auto px-5 flex justify-between items-center">
+          <div className="container mx-auto px-2 lg:px-5 flex justify-between items-center">
             <Link href={"/"} className="flex items-center gap-2 text-white">
               <div className="flex justify-center items-center size-12 bg-theme-secondary text-theme rounded-full">
                 <ShoppingBasketIcon size={26} />
@@ -73,12 +83,14 @@ const Header = () => {
               </span>
             </Link>
 
+            <div className="hidden w-full lg:flex">
               <Searchbar />
+            </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 lg:gap-3">
               <button
                 className="
-                  flex justify-center items-center
+                  hidden lg:flex justify-center items-center
                   size-12 rounded-full cursor-pointer relative
                   bg-theme-secondary text-theme
                 "
@@ -88,7 +100,7 @@ const Header = () => {
 
               <button
                 className="
-                  flex justify-center items-center
+                  hidden lg:flex justify-center items-center
                   size-12 rounded-full cursor-pointer relative
                   bg-theme-light text-slate-200
                 "
@@ -97,6 +109,17 @@ const Header = () => {
                 <span className="size-4 pt-1 flex justify-center items-center rounded-full text-xs font-semibold bg-theme-secondary absolute -top-1 right-0 text-theme">
                   0
                 </span>
+              </button>
+
+              <button
+                className="
+                  flex justify-center items-center
+                  size-12 rounded-full cursor-pointer relative
+                  bg-theme-light text-slate-200
+                "
+                onClick={() => setShowSeach(!showSearch)}
+              >
+                {showSearch ? <XIcon size={22} /> : <SearchIcon size={22} />}
               </button>
 
               <div className="flex items-center gap-3">
@@ -113,7 +136,7 @@ const Header = () => {
                   </span>
                 </button>
 
-                <div className="-space-y-2 text-white">
+                <div className="-space-y-2 text-white hidden lg:block">
                   <h4 className="font-semibold text-xl">$0.00</h4>
                   <span className="text-xs text-slate-400 font-poppins">
                     Your cart
@@ -123,7 +146,15 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+        {showSearch && (
+          <div className="lg:hidden flex p-2">
+            <Searchbar />
+          </div>
+        )}
       </div>
+
+      
     </>
   );
 };
