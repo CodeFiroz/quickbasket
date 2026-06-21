@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${InterSans.variable} ${PoppinsSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full w-full overflow-x-hidden flex flex-col">
 
 
         <Header />

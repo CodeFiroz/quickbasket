@@ -49,6 +49,7 @@ const Searchbar = () => {
 
   return (
     <>
+    
       <div className="w-full max-w-xl mx-auto relative">
         <div className="w-full flex justify-between items-center bg-white rounded-full p-3 gap-3">
           <SearchIcon size={20} className="text-slate-500" />

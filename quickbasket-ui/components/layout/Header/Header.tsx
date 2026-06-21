@@ -3,17 +3,19 @@
 import {
   FlameIcon,
   HeartIcon,
-  HomeIcon,
+  LayoutDashboardIcon,
+  MenuIcon,
   SearchIcon,
   ShoppingBagIcon,
   ShoppingBasketIcon,
+  StoreIcon,
   User2Icon,
-  UserIcon,
   XIcon,
 } from "lucide-react";
 import Link from "next/link";
 import Searchbar from "./Searchbar";
-import { useRef, useState } from "react";
+import { useState } from "react";
+import CartSidebar from "./CartSidebar";
 
 const Header = () => {
   const navmenu = {
@@ -29,11 +31,15 @@ const Header = () => {
     ],
   };
 
-  const [showSearch, setShowSeach] = useState<boolean>(false);
-  const searchRef = useRef(null);
+  const [showSearch, setShowSearch] = useState<boolean>(false);
+  const [showCart, setShowcart] = useState<boolean>(false);
 
   return (
     <>
+     <CartSidebar
+          isOpen={showCart}
+          onClose={()=> setShowcart(false)}
+        />
       <div className="bg-theme">
         <div className="w-full border-b border-white/10 p-2">
           <div className="container mx-auto px-5 flex justify-center lg:justify-between items-center">
@@ -106,7 +112,7 @@ const Header = () => {
                 "
               >
                 <HeartIcon size={22} />
-                <span className="size-4 pt-1 flex justify-center items-center rounded-full text-xs font-semibold bg-theme-secondary absolute -top-1 right-0 text-theme">
+                <span className="size-4 flex justify-center items-center rounded-full text-xs font-semibold bg-theme-secondary absolute -top-1 right-0 text-theme">
                   0
                 </span>
               </button>
@@ -117,12 +123,14 @@ const Header = () => {
                   size-12 rounded-full cursor-pointer relative
                   bg-theme-light text-slate-200
                 "
-                onClick={() => setShowSeach(!showSearch)}
+                onClick={() => setShowSearch(!showSearch)}
               >
                 {showSearch ? <XIcon size={22} /> : <SearchIcon size={22} />}
               </button>
 
-              <div className="flex items-center gap-3">
+              <div 
+                onClick={()=> setShowcart(true)}
+              className="flex items-center gap-3">
                 <button
                   className="
                   flex justify-center items-center
@@ -131,7 +139,7 @@ const Header = () => {
                 "
                 >
                   <ShoppingBagIcon size={22} />
-                  <span className="size-4 pt-1 flex justify-center items-center rounded-full text-xs font-semibold bg-theme-secondary absolute -top-1 right-0 text-theme">
+                  <span className="size-4  flex justify-center items-center rounded-full text-xs font-semibold bg-theme-secondary absolute -top-1 right-0 text-theme">
                     0
                   </span>
                 </button>
@@ -154,7 +162,34 @@ const Header = () => {
         )}
       </div>
 
-      
+      <div className="w-full block lg:hidden bg-white shadow-2xl border-t border-slate-100 fixed bottom-0 left-0 z-40 py-2 px-5">
+        <div className="mx-auto grid grid-cols-5 gap-3">
+          <button className="flex justify-center items-center flex-col gap-2">
+            <StoreIcon size={24} className="text-gray-500" />
+            <span className="text-xs text-gray-500">Home</span>
+          </button>
+
+          <button className="flex justify-center items-center flex-col gap-2">
+            <LayoutDashboardIcon size={24} className="text-gray-500" />
+            <span className="text-xs text-gray-500">Shop</span>
+          </button>
+
+          <button className="flex justify-center items-center flex-col gap-2">
+            <MenuIcon size={24} className="text-gray-500" />
+            <span className="text-xs text-gray-500">Menu</span>
+          </button>
+
+          <button className="flex justify-center items-center flex-col gap-2">
+            <HeartIcon size={24} className="text-gray-500" />
+            <span className="text-xs text-gray-500">Wishlist</span>
+          </button>
+
+          <button className="flex justify-center items-center flex-col gap-2">
+            <User2Icon size={24} className="text-gray-500" />
+            <span className="text-xs text-gray-500">Account</span>
+          </button>
+        </div>
+      </div>
     </>
   );
 };
