@@ -1,0 +1,328 @@
+{
+  "product": {
+    "_id": "507f1f77bcf86cd799439011",
+    "name": "Premium Cotton T-Shirt",
+    "slug": "premium-cotton-t-shirt",
+    "description": {
+      "short": "High-quality 100% organic cotton t-shirt with perfect fit",
+      "long": "Experience ultimate comfort with our premium organic cotton t-shirt. Made from sustainably sourced materials, this shirt features a classic fit, reinforced stitching, and eco-friendly dyes. Perfect for everyday wear, it's breathable, durable, and retains its shape wash after wash."
+    },
+    "meta": {
+      "title": "Premium Organic Cotton T-Shirt | Eco-Friendly Fashion",
+      "description": "Shop our premium organic cotton t-shirt. Sustainable, comfortable, and stylish. Free shipping on orders over $50.",
+      "keywords": ["organic cotton t-shirt", "sustainable fashion", "eco-friendly clothing", "premium t-shirt"],
+      "canonicalUrl": "https://yourstore.com/products/premium-cotton-t-shirt"
+    },
+    "pricing": {
+      "basePrice": 29.99,
+      "compareAtPrice": 39.99,
+      "costPerItem": 12.50,
+      "taxClass": "standard"
+    },
+    "inventory": {
+      "sku": "TS-ORG-001",
+      "trackQuantity": true,
+      "quantity": 500,
+      "lowStockAlert": 20,
+      "backorder": true,
+      "reservedStock": 45
+    },
+    "images": {
+      "main": {
+        "url": "https://klbtheme.com/bevesi/wp-content/uploads/2024/04/1-15-768x768.jpg",
+        "alt": "Premium organic cotton t-shirt in white",
+        "caption": "Front view of our premium t-shirt",
+        "width": 1200,
+        "height": 1600
+      },
+      "gallery": [
+        {
+          "url": "https://cdn.yourstore.com/images/products/tshirt-back.jpg",
+          "alt": "Back view of premium t-shirt",
+          "caption": "Back view showing reinforced stitching",
+          "sortOrder": 1,
+          "isVideo": false,
+          "videoUrl": null
+        },
+        {
+          "url": "https://cdn.yourstore.com/images/products/tshirt-detail.jpg",
+          "alt": "Fabric detail of premium t-shirt",
+          "caption": "Close-up of organic cotton fabric texture",
+          "sortOrder": 2,
+          "isVideo": false,
+          "videoUrl": null
+        },
+        {
+          "url": "https://cdn.yourstore.com/images/products/tshirt-video.mp4",
+          "alt": "T-shirt product video",
+          "caption": "360° view of the t-shirt",
+          "sortOrder": 3,
+          "isVideo": true,
+          "videoUrl": "https://cdn.yourstore.com/videos/tshirt-360.mp4"
+        }
+      ]
+    },
+    "categories": [
+      "507f1f77bcf86cd799439012",
+      "507f1f77bcf86cd799439013"
+    ],
+    "tags": ["new-arrival", "best-seller", "organic", "sustainable", "summer-collection"],
+    "collections": [
+      "507f1f77bcf86cd799439014"
+    ],
+    "hasVariants": true,
+    "variantAttributes": [
+      {
+        "name": "Size",
+        "values": ["XS", "S", "M", "L", "XL", "XXL"]
+      },
+      {
+        "name": "Color",
+        "values": ["White", "Black", "Navy", "Charcoal", "Forest Green"]
+      },
+      {
+        "name": "Fit",
+        "values": ["Regular", "Slim", "Oversized"]
+      }
+    ],
+    "shipping": {
+      "weight": 250,
+      "dimensions": {
+        "length": 30,
+        "width": 20,
+        "height": 5
+      },
+      "freeShipping": false,
+      "shippingClass": "standard",
+      "countriesExcluded": ["US", "CA"]
+    },
+    "status": "active",
+    "publishedAt": "2026-01-15T10:30:00.000Z",
+    "visibility": "public",
+    "seo": {
+      "h1": "Premium Organic Cotton T-Shirt - Sustainable Fashion",
+      "metaDescription": "Shop our best-selling organic cotton t-shirt. Sustainable, comfortable, and ethically made. Available in multiple sizes and colors. Free returns.",
+      "focusKeyword": "organic cotton t-shirt",
+      "noIndex": false
+    },
+    "avgRating": 4.7,
+    "totalReviews": 342,
+    "createdBy": "507f1f77bcf86cd799439015",
+    "updatedBy": "507f1f77bcf86cd799439016",
+    "createdAt": "2026-01-10T08:00:00.000Z",
+    "updatedAt": "2026-06-21T14:30:00.000Z"
+  },
+  
+  "variants": [
+    {
+      "_id": "607f1f77bcf86cd799439021",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-WHT-S-RG",
+      "attributes": {
+        "Size": "S",
+        "Color": "White",
+        "Fit": "Regular"
+      },
+      "attributeHash": "a3f5c8d9e2b1a4f6c7d8e9f0a1b2c3d4",
+      "price": 29.99,
+      "compareAtPrice": 39.99,
+      "inventory": {
+        "quantity": 85,
+        "reservedStock": 12,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-white-s.jpg",
+          "alt": "White organic cotton t-shirt size S"
+        }
+      ],
+      "shipping": {
+        "weight": 250,
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 5
+        }
+      },
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z"
+    },
+    {
+      "_id": "607f1f77bcf86cd799439022",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-WHT-M-SL",
+      "attributes": {
+        "Size": "M",
+        "Color": "White",
+        "Fit": "Slim"
+      },
+      "attributeHash": "b4g6d9e3f2c1b5a7d8e9f0a2b3c4d5e6",
+      "price": 29.99,
+      "compareAtPrice": null,
+      "inventory": {
+        "quantity": 120,
+        "reservedStock": 25,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-white-m-slim.jpg",
+          "alt": "White organic cotton t-shirt size M slim fit"
+        }
+      ],
+      "shipping": {
+        "weight": 250,
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 5
+        }
+      },
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z"
+    },
+    {
+      "_id": "607f1f77bcf86cd799439023",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-BLK-L-OV",
+      "attributes": {
+        "Size": "L",
+        "Color": "Black",
+        "Fit": "Oversized"
+      },
+      "attributeHash": "c5h7e0f4g3d2c6b8e9f0a3b4c5d6e7f8",
+      "price": 32.99,
+      "compareAtPrice": 39.99,
+      "inventory": {
+        "quantity": 45,
+        "reservedStock": 8,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-black-l-oversized.jpg",
+          "alt": "Black organic cotton t-shirt size L oversized"
+        }
+      ],
+      "shipping": {
+        "weight": 280,
+        "dimensions": {
+          "length": 32,
+          "width": 22,
+          "height": 6
+        }
+      },
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z"
+    },
+    {
+      "_id": "607f1f77bcf86cd799439024",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-NVY-XL-RG",
+      "attributes": {
+        "Size": "XL",
+        "Color": "Navy",
+        "Fit": "Regular"
+      },
+      "attributeHash": "d6i8f1g5h4e3d7c9f0a4b5c6d7e8f9g0",
+      "price": 29.99,
+      "compareAtPrice": 39.99,
+      "inventory": {
+        "quantity": 30,
+        "reservedStock": 0,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-navy-xl.jpg",
+          "alt": "Navy organic cotton t-shirt size XL"
+        }
+      ],
+      "shipping": {
+        "weight": 250,
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 5
+        }
+      },
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z"
+    },
+    {
+      "_id": "607f1f77bcf86cd799439025",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-GRN-M-RG",
+      "attributes": {
+        "Size": "M",
+        "Color": "Forest Green",
+        "Fit": "Regular"
+      },
+      "attributeHash": "e7j9g2h6i5f4e8d0f1a5b6c7d8e9f0g1",
+      "price": 29.99,
+      "compareAtPrice": null,
+      "inventory": {
+        "quantity": 65,
+        "reservedStock": 10,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-green-m.jpg",
+          "alt": "Forest Green organic cotton t-shirt size M"
+        }
+      ],
+      "shipping": {
+        "weight": 250,
+        "dimensions": {
+          "length": 30,
+          "width": 20,
+          "height": 5
+        }
+      },
+      "status": "out-of-stock",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-20T09:15:00.000Z"
+    },
+    {
+      "_id": "607f1f77bcf86cd799439026",
+      "productId": "507f1f77bcf86cd799439011",
+      "sku": "TS-ORG-CHA-XXL-OV",
+      "attributes": {
+        "Size": "XXL",
+        "Color": "Charcoal",
+        "Fit": "Oversized"
+      },
+      "attributeHash": "f8k0h3i7j6g5f9e1g2a6b7c8d9e0f1h2",
+      "price": 34.99,
+      "compareAtPrice": 39.99,
+      "inventory": {
+        "quantity": 15,
+        "reservedStock": 3,
+        "lowStockAlert": 5
+      },
+      "images": [
+        {
+          "url": "https://cdn.yourstore.com/images/variants/tshirt-charcoal-xxl-oversized.jpg",
+          "alt": "Charcoal organic cotton t-shirt size XXL oversized"
+        }
+      ],
+      "shipping": {
+        "weight": 300,
+        "dimensions": {
+          "length": 34,
+          "width": 24,
+          "height": 6
+        }
+      },
+      "status": "active",
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-06-21T14:30:00.000Z"
+    }
+  ]
+}

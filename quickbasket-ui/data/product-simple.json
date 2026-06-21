@@ -1,0 +1,89 @@
+{
+  "product": {
+    "_id": "507f1f77bcf86cd799439030",
+    "name": "Wireless Bluetooth Headphones Pro",
+    "slug": "wireless-bluetooth-headphones-pro",
+    "description": {
+      "short": "Premium noise-canceling wireless headphones with 40hr battery",
+      "long": "Experience studio-quality sound with our flagship wireless headphones. Features active noise cancellation, 40-hour battery life, comfortable memory foam ear cushions, and premium sound quality. Perfect for travel, work, and everyday use."
+    },
+    "meta": {
+      "title": "Wireless Bluetooth Headphones Pro | Noise Cancelling",
+      "description": "Premium wireless headphones with active noise cancellation, 40hr battery, and studio-quality sound. Shop now for free shipping.",
+      "keywords": ["wireless headphones", "bluetooth headphones", "noise cancelling", "premium audio"]
+    },
+    "pricing": {
+      "basePrice": 199.99,
+      "compareAtPrice": 249.99,
+      "costPerItem": 89.99,
+      "taxClass": "electronics"
+    },
+    "inventory": {
+      "sku": "HP-BT-PRO-001",
+      "trackQuantity": true,
+      "quantity": 350,
+      "lowStockAlert": 25,
+      "backorder": false,
+      "reservedStock": 38
+    },
+    "images": {
+      "main": {
+        "url": "https://klbtheme.com/bevesi/wp-content/uploads/2024/04/1-15-768x768.jpg",
+        "alt": "Wireless Bluetooth Headphones Pro in black",
+        "caption": "Front view of headphones",
+        "width": 1200,
+        "height": 1200
+      },
+      "gallery": [
+        {
+          "url": "https://cdn.yourstore.com/images/products/headphones-side.jpg",
+          "alt": "Side view of headphones",
+          "caption": "Side view showing controls",
+          "sortOrder": 1,
+          "isVideo": false,
+          "videoUrl": null
+        },
+        {
+          "url": "https://cdn.yourstore.com/images/products/headphones-case.jpg",
+          "alt": "Headphones with carrying case",
+          "caption": "Includes premium carrying case",
+          "sortOrder": 2,
+          "isVideo": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "categories": ["507f1f77bcf86cd799439040"],
+    "tags": ["electronics", "best-seller", "new-arrival", "wireless"],
+    "collections": ["507f1f77bcf86cd799439041"],
+    "hasVariants": false,
+    "variantAttributes": [],
+    "shipping": {
+      "weight": 450,
+      "dimensions": {
+        "length": 25,
+        "width": 18,
+        "height": 10
+      },
+      "freeShipping": true,
+      "shippingClass": "premium",
+      "countriesExcluded": []
+    },
+    "status": "active",
+    "publishedAt": "2026-05-01T09:00:00.000Z",
+    "visibility": "public",
+    "seo": {
+      "h1": "Wireless Bluetooth Headphones Pro - Premium Noise Cancelling",
+      "metaDescription": "Experience premium sound with our wireless headphones. 40hr battery, noise cancelling, and comfort. Free shipping and 30-day returns.",
+      "focusKeyword": "wireless bluetooth headphones",
+      "noIndex": false
+    },
+    "avgRating": 4.9,
+    "totalReviews": 789,
+    "createdBy": "507f1f77bcf86cd799439015",
+    "updatedBy": "507f1f77bcf86cd799439016",
+    "createdAt": "2026-04-20T08:00:00.000Z",
+    "updatedAt": "2026-06-21T10:00:00.000Z"
+  },
+  "variants": []
+}

@@ -1,10 +1,12 @@
 import { MinusIcon, PlusIcon, TrashIcon, XIcon } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
 const CartSidebar = ({
   isOpen,
   onClose
 }: any) => {
+
+  const [quantity, setQuantity] = useState<string>("");
   return (
     <>
       <div className={`w-full h-screen duration-600 ease-in-out absolute top-0 ${isOpen ? 'right-0' : '-right-full'} z-50 bg-black/30`}>
@@ -47,7 +49,8 @@ const CartSidebar = ({
                       <input
                         className="w-6 text-xs text-center text-gray-600"
                         type="text"
-                        value={10}
+                        onChange={(e)=> setQuantity(e.target.value)}
+                        value={quantity}
                       />
                       <button className="text-gray-500 hover:text-black cursor-pointer">
                         <PlusIcon size={12} />
